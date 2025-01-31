@@ -1,0 +1,160 @@
+/* General styles for the entire page */
+body {
+  font-family: sans-serif; /* Set default font */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  background-color: #111111;
+  overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+/* Styles for the header section */
+header {
+  background-color: #282828;
+  padding: 30px; /* Add padding */
+  max-height: 30px; /* Limit maximum height */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Distribute items evenly */
+  /* Animation for border color change */
+  animation: border-color-change 3s infinite alternate;
+}
+
+/* Styles for rate graph section */
+.rate_graph {
+  display: flex;
+}
+
+/* Styles for logo image */
+.logoImg {
+  height: 30px;
+  position: absolute;
+  left: 2px;
+}
+
+/* Styles for options list */
+.options {
+  list-style: none; /* Remove default bullet points */
+  padding: 0;
+  margin-left: 82%;
+  display: flex;
+}
+
+/* Styles for other axis text */
+.otherAxisText {
+  color: #1cad6a;
+  text-align: center;
+  font-size: 17px;
+  padding-bottom: 40px;
+}
+
+/* Styles for option links */
+.options a {
+  text-decoration: none; /* Remove underline */
+  font-size: 17.5px;
+  color: #1cad6a;
+}
+
+/* Animation for option link hover */
+.options a:hover {
+  color: #dd4746; /* Change text color on hover */
+}
+
+/* Styles for individual options */
+.options li {
+  margin-right: 40px;
+}
+
+/* Styles for main content area */
+main {
+  padding: 20px;
+}
+
+/* Styles for sections */
+section {
+  margin-bottom: 40px; /* Add bottom margin */
+  border-bottom: 2px dotted #ad451c; /* Add dotted bottom border */
+}
+
+/* Styles for container */
+.container {
+  margin-left: 85%;
+}
+
+/* Styles for axis naming */
+.axis_naming {
+  color: #1cad6a;
+  margin-left: 20px;
+  font-size: 17px;
+}
+
+/* Styles for dropdown */
+.dropdown {
+  position: relative;
+  display: flex;
+}
+
+/* Styles for select dropdown */
+select {
+  /* Reset Select */
+  appearance: none; /* Remove default appearance */
+  outline: 10px red;
+  border: 0;
+  box-shadow: none;
+  flex: 1;
+  padding: 0 1em;
+  color: #0e0d0d;
+  background-color: white;
+  background-image: none;
+  cursor: pointer;
+}
+
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none; /* Hide default arrow */
+}
+
+/* Custom styling for select wrapper */
+.select {
+  position: relative; /* Position relatively */
+  display: flex;
+  width: 5.7em;
+  height: 2em;
+  border-radius: 0.35em;
+  overflow: hidden;
+}
+
+/* Styles for select arrow */
+.select::after {
+  content: "\25BC"; /* Set arrow content */
+  position: absolute;
+  top: 50%; /* Position vertically */
+  right: 0; /* Position at the right */
+  transform: translateY(-50%); /* Adjust vertical position */
+  padding: 1em;
+  background-color: #ffffff;
+  transition: 0.25s all ease; /* Add transition */
+  pointer-events: none; /* Disable pointer events */
+}
+
+/* Transition effect for select arrow hover */
+.select:hover::after {
+  color: #1cad6a; /* Change color on hover */
+}
+
+/* Styles for title */
+.idTitle {
+  margin-top: 30px;
+  text-align: center;
+  color: #1cad6a;
+  font-size: 30px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif; /* Set font family */
+}
+
+/* Styles for pie chart */
+.piechart {
+  margin: 0 auto;
+  height: 450px;
+  display: flex;
+}

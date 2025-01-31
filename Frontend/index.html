@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForeignX</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="./js/common.js"></script>
+</head>
+<body>
+    <header>
+      <img class="logoImg" src="./Assets/foreignxLogo.png" alt="logo">
+       <!-- Navigation to go on the graph or on the pie chart-->
+      <ul class="options">
+        <li class="rate_graph"><a href="#historical">Rates Graph</a></li>
+        <li><a href="#sentiment">Sentiment</a></li>
+      </ul>
+    </header>
+
+     <!-- Numerical rates section where historical and predicted data is displayed -->
+    <section id="historical">
+      <h1 class="idTitle">Rates</h1>
+      
+     <!-- Dropdown option list for user to choose currency -->
+      <div class="dropdown">
+        <div class="axis_naming">
+        <p id="selectedCurrencyText1">Currency/USD</p>
+      </div>
+          <div class= "container">
+            <div class="select">
+              <select id="currencySelect" >
+                <option value="1">JPY</option>
+                <option value="2">GBP</option>
+                <option value="3">MUR</option>
+                <option value="2">EUR</option>
+                <option value="3">CAD</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     <!-- id to be replaced with graph obtained from javascript file-->
+      <div id='grapDiv'></div>
+      <div class="otherAxisText">DATE</div>
+    </section>
+
+     <!-- Sentiment data section where different sentiment data (positive, negative, neutral) are displayed -->
+    <section2 id="sentiment">
+      <h1 class="idTitle">Sentiment Analysis</h1>
+
+     <!-- Dropdown option list for user to choose currency -->
+      <div class="dropdown">
+        <div class="axis_naming">
+        <p id="selectedCurrencyText">Currency/USD</p>
+      </div>
+          <div class= "container">
+            <div class="select">
+              <select  id="currencySelectSentiment">
+                <option value="1">JPY</option>
+                <option value="2">GBP</option>
+                <option value="3">MUR</option>
+                <option value="2">EUR</option>
+                <option value="3">CAD</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     <!-- id to be replaced with pie chart obtained from javascript file-->
+      <div class="piechart" id="pie_chart"></div>
+    </section2>
+    
+</body>
+
+</html>
